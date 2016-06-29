@@ -14,6 +14,10 @@
 		A99011641D23F5ED00BE73C0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99011621D23F5ED00BE73C0 /* MainInterface.storyboard */; };
 		A99011661D23F5ED00BE73C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99011651D23F5ED00BE73C0 /* Assets.xcassets */; };
 		A99011721D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */; };
+		A9C35EEC1D240739006DA6C9 /* iPad-Air-2-Silver.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C35EE81D240739006DA6C9 /* iPad-Air-2-Silver.png */; };
+		A9C35EED1D240739006DA6C9 /* iPad-Air-2-Space-Gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C35EE91D240739006DA6C9 /* iPad-Air-2-Space-Gray.png */; };
+		A9C35EEE1D240739006DA6C9 /* iPhone-6s-Plus-Silver.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C35EEA1D240739006DA6C9 /* iPhone-6s-Plus-Silver.png */; };
+		A9C35EEF1D240739006DA6C9 /* iPhone-6s-Plus-Space-Gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C35EEB1D240739006DA6C9 /* iPhone-6s-Plus-Space-Gray.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		A99011651D23F5ED00BE73C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A99011671D23F5ED00BE73C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleStickerBrowserViewController.swift; sourceTree = "<group>"; };
+		A9C35EE81D240739006DA6C9 /* iPad-Air-2-Silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-Air-2-Silver.png"; path = "images/iPad-Air-2-Silver.png"; sourceTree = SOURCE_ROOT; };
+		A9C35EE91D240739006DA6C9 /* iPad-Air-2-Space-Gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-Air-2-Space-Gray.png"; path = "images/iPad-Air-2-Space-Gray.png"; sourceTree = SOURCE_ROOT; };
+		A9C35EEA1D240739006DA6C9 /* iPhone-6s-Plus-Silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone-6s-Plus-Silver.png"; path = "images/iPhone-6s-Plus-Silver.png"; sourceTree = SOURCE_ROOT; };
+		A9C35EEB1D240739006DA6C9 /* iPhone-6s-Plus-Space-Gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone-6s-Plus-Space-Gray.png"; path = "images/iPhone-6s-Plus-Space-Gray.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 		A990115F1D23F5ED00BE73C0 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				A9C35EE71D24070D006DA6C9 /* Images */,
 				A99011601D23F5ED00BE73C0 /* MessagesViewController.swift */,
 				A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */,
 				A99011621D23F5ED00BE73C0 /* MainInterface.storyboard */,
@@ -111,6 +120,17 @@
 				A99011671D23F5ED00BE73C0 /* Info.plist */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		A9C35EE71D24070D006DA6C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A9C35EE81D240739006DA6C9 /* iPad-Air-2-Silver.png */,
+				A9C35EE91D240739006DA6C9 /* iPad-Air-2-Space-Gray.png */,
+				A9C35EEA1D240739006DA6C9 /* iPhone-6s-Plus-Silver.png */,
+				A9C35EEB1D240739006DA6C9 /* iPhone-6s-Plus-Space-Gray.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A99011661D23F5ED00BE73C0 /* Assets.xcassets in Resources */,
+				A9C35EEC1D240739006DA6C9 /* iPad-Air-2-Silver.png in Resources */,
+				A9C35EEE1D240739006DA6C9 /* iPhone-6s-Plus-Silver.png in Resources */,
+				A9C35EEF1D240739006DA6C9 /* iPhone-6s-Plus-Space-Gray.png in Resources */,
 				A99011641D23F5ED00BE73C0 /* MainInterface.storyboard in Resources */,
+				A9C35EED1D240739006DA6C9 /* iPad-Air-2-Space-Gray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +427,7 @@
 				A990116C1D23F5ED00BE73C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A990116E1D23F5ED00BE73C0 /* Build configuration list for PBXNativeTarget "MessagekitApp" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +436,7 @@
 				A99011701D23F5ED00BE73C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

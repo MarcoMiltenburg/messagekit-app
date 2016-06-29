@@ -14,6 +14,13 @@ class AppleStickerBrowserViewController: MSStickerBrowserViewController {
     
     var stickers = [MSSticker]()
     
+    func loadAllStickers() {
+        createMSSticker(asset: "iPhone-6s-Plus-Silver", localizedDescription: "iPhone 6S Plus Silver")
+        createMSSticker(asset: "iPhone-6s-Plus-Space-Gray", localizedDescription: "iPhone 6s Plus Space Gray")
+        createMSSticker(asset: "iPad-Air-2-Silver", localizedDescription: "iPad Air 2 Silver")
+        createMSSticker(asset: "iPad-Air-2-Space-Gray", localizedDescription: "iPad Air 2 Space Gray")
+    }
+    
     func createMSSticker(asset: String, localizedDescription: String) {
         guard let stickerPath = Bundle.main().pathForResource(asset, ofType: "png") else {
             print("Couldn't create the sticker pat for: \(asset)")

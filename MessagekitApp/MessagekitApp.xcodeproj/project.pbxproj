@@ -13,6 +13,7 @@
 		A99011611D23F5ED00BE73C0 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99011601D23F5ED00BE73C0 /* MessagesViewController.swift */; };
 		A99011641D23F5ED00BE73C0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99011621D23F5ED00BE73C0 /* MainInterface.storyboard */; };
 		A99011661D23F5ED00BE73C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99011651D23F5ED00BE73C0 /* Assets.xcassets */; };
+		A99011721D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A99011631D23F5ED00BE73C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A99011651D23F5ED00BE73C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A99011671D23F5ED00BE73C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleStickerBrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A99011601D23F5ED00BE73C0 /* MessagesViewController.swift */,
+				A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */,
 				A99011621D23F5ED00BE73C0 /* MainInterface.storyboard */,
 				A99011651D23F5ED00BE73C0 /* Assets.xcassets */,
 				A99011671D23F5ED00BE73C0 /* Info.plist */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99011721D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift in Sources */,
 				A99011611D23F5ED00BE73C0 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

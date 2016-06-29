@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A945C83D1D243E350087B3DF /* StickerPackSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945C83C1D243E350087B3DF /* StickerPackSelectionViewController.swift */; };
 		A99011521D23F5ED00BE73C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99011511D23F5ED00BE73C0 /* Assets.xcassets */; };
 		A99011591D23F5ED00BE73C0 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A99011581D23F5ED00BE73C0 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A990115E1D23F5ED00BE73C0 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990115D1D23F5ED00BE73C0 /* Messages.framework */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A945C83C1D243E350087B3DF /* StickerPackSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPackSelectionViewController.swift; sourceTree = "<group>"; };
 		A990114E1D23F5ED00BE73C0 /* MessagekitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagekitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99011511D23F5ED00BE73C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A99011531D23F5ED00BE73C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				A9C35EE71D24070D006DA6C9 /* Images */,
 				A99011601D23F5ED00BE73C0 /* MessagesViewController.swift */,
 				A99011711D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift */,
+				A945C83C1D243E350087B3DF /* StickerPackSelectionViewController.swift */,
 				A99011621D23F5ED00BE73C0 /* MainInterface.storyboard */,
 				A99011651D23F5ED00BE73C0 /* Assets.xcassets */,
 				A99011671D23F5ED00BE73C0 /* Info.plist */,
@@ -244,6 +247,7 @@
 			files = (
 				A99011721D2400BD00BE73C0 /* AppleStickerBrowserViewController.swift in Sources */,
 				A99011611D23F5ED00BE73C0 /* MessagesViewController.swift in Sources */,
+				A945C83D1D243E350087B3DF /* StickerPackSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

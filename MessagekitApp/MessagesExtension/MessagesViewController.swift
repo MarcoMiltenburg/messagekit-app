@@ -16,14 +16,7 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        browserViewController = AppleStickerBrowserViewController(stickerSize: .regular)
-        
-        self.addChildViewController(browserViewController)
-        browserViewController.didMove(toParentViewController: self)
-        self.view.addSubview(browserViewController.view)
-        
-        browserViewController.loadAllStickers()
-        browserViewController.stickerBrowserView.reloadData()
+        presentAppleStickerViewController(presentationStyle: .compact)
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,15 +44,51 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called before the extension transitions to a new presentation style.
-    
-        // Use this method to prepare for the change in presentation style.
+        // Remove any existing child controllers.
+        for child in self.childViewControllers {
+            child.willMove(toParentViewController: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParentViewController()
+        }
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        // Called after the extension transitions to a new presentation style.
+        super.didTransition(to: presentationStyle)
+        
+        if (presentationStyle == .expanded) {
+            presentStickerPackSelectionViewController(presentationStyle: presentationStyle)
+        } else {
+            presentAppleStickerViewController(presentationStyle: presentationStyle)
+        }
+    }
+
+    func presentStickerPackSelectionViewController(presentationStyle: MSMessagesAppPresentationStyle) {
+        let controller = storyboard!.instantiateViewController(withIdentifier: "StickerPackSelection")
+        presentViewController(controller: controller)
+    }
     
-        // Use this method to finalize any behaviors associated with the change in presentation style.
+    func presentAppleStickerViewController(presentationStyle: MSMessagesAppPresentationStyle) {
+        let controller = AppleStickerBrowserViewController(stickerSize: .regular)
+        presentViewController(controller: controller)
+        controller.loadAllStickers()
+        controller.stickerBrowserView.reloadData()
+    }
+
+    func presentViewController(controller: UIViewController) {
+        
+        // Embed the new controller.
+        addChildViewController(controller)
+        
+        controller.view.frame = view.bounds
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(controller.view)
+        
+        controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        controller.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        controller.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        controller.didMove(toParentViewController: self)
     }
 
 }

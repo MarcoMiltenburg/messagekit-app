@@ -40,7 +40,7 @@ class AppleStickerBrowserViewController: MSStickerBrowserViewController {
     }
     
     override func numberOfStickers(in stickerBrowserView: MSStickerBrowserView) -> Int {
-        return 0
+        return stickers.count
     }
     
     override func stickerBrowserView(_ stickerBrowserView: MSStickerBrowserView, stickerAt index: Int) -> MSSticker {

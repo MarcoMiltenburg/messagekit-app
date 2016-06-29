@@ -17,7 +17,6 @@ class MessagesViewController: MSMessagesAppViewController {
         super.viewDidLoad()
 
         browserViewController = AppleStickerBrowserViewController(stickerSize: .regular)
-        browserViewController.view.frame = self.view.frame
         
         self.addChildViewController(browserViewController)
         browserViewController.didMove(toParentViewController: self)

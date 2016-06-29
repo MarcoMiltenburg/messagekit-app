@@ -11,9 +11,20 @@ import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
     
+    var browserViewController: AppleStickerBrowserViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        browserViewController = AppleStickerBrowserViewController(stickerSize: .regular)
+        browserViewController.view.frame = self.view.frame
+        
+        self.addChildViewController(browserViewController)
+        browserViewController.didMove(toParentViewController: self)
+        self.view.addSubview(browserViewController.view)
+        
+        browserViewController.loadAllStickers()
+        browserViewController.stickerBrowserView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
